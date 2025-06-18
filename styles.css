@@ -81,3 +81,53 @@ button:active {
     transform: translateY(2px);
     box-shadow: none;
 }
+
+#responsive{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#colorDisplay{
+    margin: 0px auto;
+    width: 200px;
+    height: 100px;
+}
+
+.red{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.orange{
+    background-color: rgb(255, 125, 0, 0.5);
+}
+
+.yellow{
+    background-color: rgb(255, 255, 0, 0.5);
+}
+
+.lightGreen{
+    background-color: rgb(125, 255, 0, 0.5);
+}
+
+.aquamarine{
+    background-color: rgb(0, 255, 125, 0.5);
+}
+
+.blue{
+    background-color: rgb(0, 125, 255, 0.5);
+}
+
+.royalBlue{
+    background-color: rgb(0, 0, 255, 0.5);
+}
+
+.purple{
+    background-color: rgb(125, 0, 255, 0.5);
+}
+
+.fuchsia{
+    background-color: rgb(255, 0, 255, 0.5);
+}
