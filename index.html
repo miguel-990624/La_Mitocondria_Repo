@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-</head>
-
-<body>
-    <video autoplay muted loop id="backgroundVideo">
-        <source src="./assets/Backgroung_Video.mp4" type="video/mp4">Your browser does not support the video
-    </video>
-    <h1>BUTTONS GAME</h1>
-    <section class="counter">
-        <h2>Counter</h2>
-        <div id="counterButton">0</div>
-        <button id="decrease">-1</button>
-        <button id="increase">+1</button>
-        <button id="reset">Reseat</button>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="counter responsive">
+      <input type="text" id="word" placeholder="Ingresa tu nombre" />
+      <button onclick="validar()" id="Button">Click me!</button>
+      <span id="message"></span>
     </section>
-
-</body>
-
+    <section class="counter responsive">    
+      <button onclick="seeMonths()" id="Button">Click me!</button>
+      <span id="months"></span>
+    </section>
+    <script src="./script.js"></script>
+  </body>
 </html>
-<script src="./app.js"></script>
