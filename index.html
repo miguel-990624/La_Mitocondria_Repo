@@ -4,25 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Buttons Game</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!--Background Video-->
     <video autoplay muted loop id="backgroundVideo">
-        <source src="./assets/Backgroung_Video.mp4" type="video/mp4">Your browser does not support the video
+        <source src="./assets/Backgroung_Video.mp4" type="video/mp4">
+        Your browser does not support the video
     </video>
-    <h1>BUTTONS GAME</h1>
-    <section class="counter">
-        <h2>Counter</h2>
+
+    <!-- navigation header -->
+    <header id="top">
+        <h1>🎮 BUTTONS GAME</h1>
+        <nav class="menu-scroll">
+            <div class="menu-items">
+                <a href="#top">🔝</a>
+                <a href="#time-greeter">Time Greeter</a>
+                <a href="#score-booster">Score Booster</a>
+                <a href="#random-word">Random Word</a>
+                <a href="#top">🔝</a>
+                <a href="#input-checker">Input Checker</a>
+                <a href="#chameleon-box">Chameleon Box</a>
+                <a href="#weekday-generator">Weekday Generator</a>
+                <a href="#top">🔝</a>
+
+                <!-- Duplicates for the infinite loop effect -->
+                <a href="#time-greeter">Time Greeter</a>
+                <a href="#score-booster">Score Booster</a>
+                <a href="#random-word">Random Word</a>
+                <a href="#top">🔝</a>
+                <a href="#input-checker">Input Checker</a>
+                <a href="#chameleon-box">Chameleon Box</a>
+                <a href="#weekday-generator">Weekday Generator</a>
+                <a href="#top">🔝</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <p>👾Welcome to the Button Challenge!
+            Click, learn, and level up your JavaScript skills.
+            Your mission starts... now!
+        </p>
+        <!-- 🎵 Game start button with music -->
+        <section class="intro-screen">
+            <button id="startGame" class="start-button">🎮 Start Game</button>
+            <div class="volume-control">
+                <label for="volumeControl">🔊 Volume</label>
+                <input type="range" min="0" max="1" step="0.01" id="volumeControl" value="0.2">
+            </div>
+        </section>
+        <audio id="bgMusic" loop>
+            <source src="./assets/bg_music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- 🎮 1 - Time Greeter -->
+    <section id="time-greeter" class="counter">
+        <h2>🕒 Time Greeter</h2>
+        <p>Greet the player based on the time of day!</p>
+        <button type="button" id="greetingButton">Saludo</button>
+        <span id="greetingDisplay"></span>
+    </section>
+
+    <!-- 🎮 2 - Score Booster -->
+    <section id="score-booster" class="counter">
+        <h2>🔢 Score Booster</h2>
+        <p>Click to increase your score and climb the leaderboard!</p>
         <div id="counterButton">0</div>
         <button id="decrease">-1</button>
         <button id="increase">+1</button>
-        <button id="reset">Reseat</button>
+        <button id="reset">Reset</button>
     </section>
 
+    <!-- 🎮 3 - Random Whisper -->
+    <section id="random-word" class="counter">
+        <h2>🎲 Random Word</h2>
+        <p>Unlock a message with each click!</p>
+        <button type="button" id="messagesButton">Click Me!</button>
+        <div id="messagesDisplay"></div>
+    </section>
+
+
+    <!-- 🎮 4 - Input Checker -->
+    <section id="input-checker" class="counter">
+        <h2>🚨 Input Checker</h2>
+        <p>Validate the player's input. Warning: empty fields alert!</p>
+        <div class="placeholder">Coming soon...</div>
+    </section>
+
+
+    <!-- 🎮 5 - Chameleon Box -->
+    <section id="chameleon-box" class="counter">
+        <h2>🎨 Chameleon Box</h2>
+        <p>Transform the color like a shape-shifter!</p>
+        <button type="button" id="colorButton">Click Me!</button>
+        <div id="colorDisplay"></div>
+    </section>
+
+
+    <!-- 🎮 6 - Weekday Generator -->
+    <section id="weekday-generator" class="counter">
+        <h2>📅 Weekday Generator</h2>
+        <p>Summon the days of the week one by one!</p>
+        <div class="placeholder">Coming soon...</div>
+    </section>
+
+    <!-- ✨ FOOTER -->
+    <footer>
+        <p>Made by 'the mitochondria' Cell | Linus Clan - Riwi</p>
+    </footer>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
-<script src="./app.js"></script>
