@@ -259,6 +259,19 @@ button:active {
     padding: 6rem;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 15px;
+  padding-left: 20px;
+  font-family: sans-serif;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
 /* FOOTER */
 footer {
     margin-top: 5rem;
