@@ -13,6 +13,31 @@ volumeControl.addEventListener("input", () => {
 });
 //End Backgroung Music
 
+//Button 1
+const greetingButton = document.getElementById("greetingButton");
+const greetingDisplay = document.getElementById("greetingDisplay");
+
+function getGreetingMessage() {
+    const currentHour = new Date().getHours(); // Obtiene la hora actual (0-23)
+    //Crea un objeto de fecha actual y extrae la hora
+    if (currentHour < 12) {//Si la hora es antes de medio dia
+        return "¡Good morning!";
+    } else if (currentHour < 18) {//si es entre las 12 y las 6
+        return "¡Good evening!";
+    } else {//si es despues de las 6 
+        return "¡Good night!";
+    }
+}
+
+greetingButton.addEventListener("click", () => {
+    const message = getGreetingMessage();
+    greetingDisplay.textContent = message;
+
+    soundclick.currentTime = 0;
+    soundclick.play();
+});
+
+
 //Button 2
 let soundclick = new Audio("./assets/Click_Counter.wav");
 //Inicializo contador en 0
