@@ -21,31 +21,31 @@
     <!-- navigation header -->
     <header id="top">
       <h1>🎮 BUTTONS GAME</h1>
-      <nav class="menu-scroll">
-        <div class="menu-items">
-          <a href="#top">🔝</a>
-          <a href="#time-greeter">Time Greeter</a>
-          <a href="#score-booster">Score Booster</a>
-          <a href="#random-word">Random Word</a>
-          <a href="#top">🔝</a>
-          <a href="#input-checker">Input Checker</a>
-          <a href="#chameleon-box">Chameleon Box</a>
-          <a href="#weekday-generator">Weekday Generator</a>
-          <a href="#top">🔝</a>
-
-          <!-- Duplicates for the infinite loop effect -->
-          <a href="#time-greeter">Time Greeter</a>
-          <a href="#score-booster">Score Booster</a>
-          <a href="#random-word">Random Word</a>
-          <a href="#top">🔝</a>
-          <a href="#input-checker">Input Checker</a>
-          <a href="#chameleon-box">Chameleon Box</a>
-          <a href="#weekday-generator">Weekday Generator</a>
-          <a href="#top">🔝</a>
-        </div>
-      </nav>
+      
     </header>
+    <nav class="menu-scroll">
+      <div class="menu-items">
+        <a href="#top">🔝</a>
+        <a href="#time-greeter">Time Greeter</a>
+        <a href="#score-booster">Score Booster</a>
+        <a href="#random-word">Random Word</a>
+        <a href="#top">🔝</a>
+        <a href="#input-checker">Input Checker</a>
+        <a href="#chameleon-box">Chameleon Box</a>
+        <a href="#weekday-generator">Weekday Generator</a>
+        <a href="#top">🔝</a>
 
+        <!-- Duplicates for the infinite loop effect -->
+        <a href="#time-greeter">Time Greeter</a>
+        <a href="#score-booster">Score Booster</a>
+        <a href="#random-word">Random Word</a>
+        <a href="#top">🔝</a>
+        <a href="#input-checker">Input Checker</a>
+        <a href="#chameleon-box">Chameleon Box</a>
+        <a href="#weekday-generator">Weekday Generator</a>
+        <a href="#top">🔝</a>
+      </div>
+    </nav>
     <section class="hero">
       <p>
         👾Welcome to the Button Challenge! Click, learn, and level up your
@@ -102,7 +102,7 @@
     <section id="input-checker" class="counter">
       <h2>🚨 Input Checker</h2>
       <p>Validate the player's input. Warning: empty fields alert!</p>
-      <section class="counter responsive">
+      <section class=" responsive">
         <input type="text" id="word" placeholder="Enter your name" />
         <button onclick="validar()" id="Button">Click me!</button>
         <span id="message"></span>
@@ -118,14 +118,15 @@
       <div id="colorDisplay"></div>
     </section>
 
-    <!-- 🎮 6 - Weekday Generator -->
-    <section id="weekday-generator" class="counter">
-      <h2>📅 Weekday Generator</h2>
-      <p>Summon the days of the week one by one!</p>
+    <!-- 🎮 6 - Month Generator -->
+    <section id="Month-generator" class="counter">
+      <h2>📅 Month Generator</h2>
+      <p>Summon the months of the year one by one!</p>
       <div class="placeholder">Coming soon...</div>
-      <section class="counter responsive">
+      <section class=" responsive">
         <button onclick="seeMonths()" id="Button">Click me!</button>
         <span id="months"></span>
+        <button id="resetMonth">Reset</button>
       </section>
     </section>
 

@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding-top: 11rem;
@@ -37,8 +40,8 @@ header {
 
 /* ✅ NAV FIJO CON ANIMACIÓN HORIZONTAL */
 .menu-scroll {
-    position: fixed;
-    top: 12rem;
+    position: sticky;
+    top: 0;
     /* debajo del header */
     left: 0;
     width: 100%;
@@ -168,9 +171,13 @@ h2 {
 
 /* COUNTER */
 .counter {
-    margin-top: 15rem;
     padding: 2rem;
+    margin-bottom: 20rem;
     background-color: #00b8d095;
+}
+
+.counter:first-child{
+    margin-top: 15rem;
 }
 
 #counterButton {

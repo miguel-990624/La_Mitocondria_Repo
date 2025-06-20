@@ -1,4 +1,4 @@
-//Backgroung Music
+//Background Music
 const startButton = document.getElementById("startGame");
 const bgMusic = document.getElementById("bgMusic");
 const volumeControl = document.getElementById("volumeControl");
@@ -6,12 +6,15 @@ const volumeControl = document.getElementById("volumeControl");
 startButton.addEventListener("click", () => {
   bgMusic.volume = volumeControl.value;
   bgMusic.play();
+  soundclick.currentTime = 0;
+  soundclick.play();
 });
 
 volumeControl.addEventListener("input", () => {
   bgMusic.volume = volumeControl.value;
+  
 });
-//End Backgroung Music
+//End Background Music
 
 //Button 1
 const greetingButton = document.getElementById("greetingButton");
@@ -30,8 +33,8 @@ function getGreetingMessage() {
 }
 
 greetingButton.addEventListener("click", () => {
-    const message = getGreetingMessage();
-    greetingDisplay.textContent = message;
+    const messages = getGreetingMessage();
+    greetingDisplay.textContent = messages;
 
     soundclick.currentTime = 0;
     soundclick.play();
@@ -145,6 +148,8 @@ function validar() {
     input.classList.remove("Error");
     mensaje.textContent = "Campo valido";
   }
+  soundclick.currentTime = 0;
+  soundclick.play();
 }
 
 //button 5
@@ -180,6 +185,8 @@ colorButton.addEventListener("click", (e) => {
 });
 
 //button 6
+const resetMonth = document.getElementById("resetMonth");
+const message = document.getElementById("months");
 
 function seeMonths() {
   const months = [
@@ -197,8 +204,6 @@ function seeMonths() {
     "December",
   ];
 
-  const message = document.getElementById("months");
-
   message.innerHTML = "";
 
   const list = document.createElement("ul");
@@ -209,4 +214,17 @@ function seeMonths() {
     list.appendChild(item);
   }
   message.appendChild(list);
+  soundclick.currentTime = 0;
+  soundclick.play();
 }
+
+const noMonths = () => {
+  message.innerHTML = "";
+  soundclick.currentTime = 0;
+  soundclick.play();
+};
+
+
+resetMonth.addEventListener("click", (e) =>{
+  noMonths();
+});
